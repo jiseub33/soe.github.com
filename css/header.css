@@ -1,0 +1,51 @@
+header {
+    position: fixed;
+    top: 0;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 1000;
+    animation: auto linear header;
+    animation-timeline: scroll(block);
+}
+
+@keyframes header {
+    0% {
+        background: rgba(255, 255, 255, 0);
+    }
+    5% {
+        background: rgba(255, 255, 255, 1);
+    }
+    100%{
+        background: rgba(255, 255, 255, 1);
+    }
+}
+
+
+header .canvas {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+header .canvas .logo a {
+    display: block;
+    width: 200px;
+}
+
+header .canvas .logo a img {
+    width: 100%;
+    animation: auto linear header-image;
+    animation-timeline: scroll(block);
+}
+
+@keyframes header-image {
+    0% {
+        filter: brightness(1);
+    }
+    5% {
+        filter: brightness(0);
+    }
+    100%{
+        filter: brightness(0);
+    }
+}
