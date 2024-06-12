@@ -26,7 +26,7 @@ main .title h1 {
     font-weight: 700;
 }
 
-main img {
+main > img {
     display: block;
     margin: 0 auto;
     width: 25%;
@@ -135,6 +135,24 @@ main .content1-sub {
     text-align: center;
 }
 
+main .content1-sub .partner {
+    margin: 50px auto;
+}
+
+main .content1-sub .partner .canvas {
+    display: inline-block;
+    margin: 0 25px;
+    height: 40px;
+}
+
+main .content1-sub .partner .canvas img {
+    height: 100%;
+}
+
+main .content1-sub .partner .canvas svg {
+    height: 100%;
+}
+
 main .content2 {
     position: relative;
     padding: 100px;
@@ -183,10 +201,11 @@ main .content2 .iphone .iphone-canvas {
     position: absolute;
     width: 100%;
     aspect-ratio: 9 / 18.6;
-    border-radius: 36px;
+    border-radius: 38px;
 }
 
 main .content2 .iphone .iphone-canvas img {
+    display: block;
     position: absolute;
     padding: 7.5px;
     width: 100%;
@@ -204,7 +223,9 @@ main .content2 .iphone:hover .iphone-canvas img:nth-of-type(2) {
 }
 
 main .content2 .iphone > img {
+    display: block;
     position: absolute;
+    margin: 0 auto;
     width: 100%;
     border-radius: 36px;
     box-shadow: -10px 10px 15px 0.5px rgba(44, 38, 72, 0.5);
@@ -224,10 +245,10 @@ main .content3 {
 }
 
 @keyframes scroll2 {
-    60% {
+    70% {
         background-size: 0%;
     }
-    90% {
+    82.5% {
         background-size: 100%;
     }
     100% {
