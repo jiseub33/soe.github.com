@@ -4,8 +4,15 @@ header {
     padding: 20px 0;
     width: 100%;
     z-index: 1000;
+    transition: 1s all;
     animation: auto linear header;
     animation-timeline: scroll(block);
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding: 5px 0;
+    }
 }
 
 @keyframes header {
@@ -34,6 +41,13 @@ header .canvas {
 header .canvas .logo a {
     display: block;
     width: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    header .canvas .logo a {
+        display: block;
+        width: 40%;
+    }
 }
 
 header .canvas .logo a img {
